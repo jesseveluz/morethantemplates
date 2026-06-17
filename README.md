@@ -8,6 +8,9 @@ If you're a skilled PHP programmer, MTT is also a solid base to extend further â
 
 MTT comes with pre-configured scripts, so in most cases you only need to edit a single configuration file and the rest is set up for you.
 
+** Note
+- This PHP program is an old file from 2010. Some of the PHP commands may already be deprecated.
+
 ## Features
 
 - **Contact Form** â€” Captcha-enabled to help cut down on spam.

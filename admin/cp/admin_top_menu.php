@@ -1,0 +1,1 @@
+<div class="adminmenu"><a href="<?php print ADMIN_DIR; ?>/cp">Home</a> | <a href="members.php">Members</a> | <a href="forumsections.php">Forum Manager</a> | <a href="trafficstat.php">Site Traffic</a></div>

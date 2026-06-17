@@ -1,0 +1,30 @@
+# MORETHANTEMPLATE
+#
+#
+#
+#
+######################################
+# IMPORTANT NOTE: This requires knowledge of htaccess. #
+#      Dont edit unless you know what you're doing.           #
+######################################
+
+# PROTECT HTACCESS
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# ERROR DOCS
+ErrorDocument 404 /404.php
+ErrorDocument 403 /forbidden.php
+ErrorDocument 500 /error.php
+
+# FOR AFFILIATE PROGRAM
+# change the [YOURDOMAIN] and [YOURDIRECTORY] according to your settings
+RewriteEngine On
+RewriteRule ^ap/([a-zA-Z0-9]+)$ https://veluzian.com/projects/mtt/afftrack.php?fid=$1 [R=301,L]
+RewriteRule ^ap/([a-zA-Z0-9]+)/$ https://veluzian.com/projects/mtt/afftrack.php?fid=$1 [R=301,L]
+
+
+
+

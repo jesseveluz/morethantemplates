@@ -1,0 +1,10 @@
+License Terms For Using More Than Templates
+
+MoreThanTemplate Version 1.0.0.0
+(c) Jesse Veluz, 2010
+www.jesseveluz.com
+licensed under Creative Commons Attribution 3.0 License.
+https://creativecommons.org/licenses/by/3.0/
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

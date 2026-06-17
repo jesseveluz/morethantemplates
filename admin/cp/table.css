@@ -1,0 +1,81 @@
+/* 
+*Style for tablecreator
+ *****/
+ 
+#tablecreator {
+font-family: Verdana, Arial, Times, Helvetica;
+font-size: 11px;
+border-style: none;
+background-color: #fff;
+padding: 0px;
+text-align: left;
+margin: 0 0 0 0px;
+vertical-align: top;
+width: 100%;
+}
+
+#tablecreator tr {
+background-color: #e2e2e2;
+}
+
+#tablecreator td { 
+padding: 3px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#tablecreator .tableheader{
+color: #FFF;
+font-weight: bold;
+border-style: none;
+background-color: #999;
+padding: 2px 4px 2px 4px;
+font-size: 14px;
+}
+
+#tablecreator .highlighted{
+color: #660000;
+font-weight: bold;
+border-style: none;
+background-color: #00CC99;
+}
+
+
+
+/* used by the tableruler */
+#tablecreator tr.ruled {
+background:#ccff99;
+}
+
+/*
+* for the dbnavigator
+ ****/ 
+#dbnavigator {
+font-family: Verdana, Arial, Times, Helvetica;
+font-size: 11px;
+border-style: none;
+background-color: #FFFFFF;
+padding: 0px;
+text-align: center;
+}
+
+#dbnavigator .listperitem{
+font-family: Arial,
+}
+
+#dbnavigator .navstatus{
+font: normal 9px Verdana, Arial, Times, Helvetica;
+background-color: #ffffff;
+}
+
+#dbnavigator  a{
+text-decoration: none;
+}
+
+#dbnavigator  a:hover { 
+position: relative; 
+bottom: 1px;
+font-weight: bold;
+}
+
+tr {vertical-align: top; }

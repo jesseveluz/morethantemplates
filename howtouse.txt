@@ -1,0 +1,223 @@
+/*
+ * MORETHANTEMPLATE Version 1.0.0.0
+ * (c) Jesse Veluz, 2010
+ * www.jesseveluz.com
+ *
+ */
+
+```````````````````````````````````````````````````````````
+HOW TO INTEGRATE AFFILIATE PROGRAM TO YOUR MEMBERSHIP
+```````````````````````````````````````````````````````````
+
+First of all, please check .htaccess file to see that URL is properly set to track affiliates.  This requires knowledge of htaccess.  Failure to setup the htaccess file will disable the system to track affiliate referral properly.
+
+Basically, any affiliate program can be integrated to your MTT website.  Your members can help you promote products by inviting people to signup to your membership.  For example if you use CLICKBANK as your affiliate program, then your members can use their Clickbank ID. 
+
+Your member affiliate URL will be:
+http://[YOURDOMAIN]/[SITEDIRECTORY]/ap/[CLICKBANK_ID]
+
+where:
+[YOURDOMAIN] - your domain name
+[SITEDIRECTORY] - where you install MTT
+[CLICKBANK_ID] - member clickbank ID
+
+Example:
+http://example.com/example/ap/myclickbankid
+
+If you install your MTT site in the root, then your member URL will look something like:
+http://example.com/ap/myclickbankid
+
+Inside the membership area, use this code to refer to the parent ID
+
+<?php print $parentid; ?>
+
+You can use this code to generate the URL so that your affiliate will get rewarded.
+
+
+````````````````````````````````````````````````````````````````
+VARIABLES TO USE WHEN EDITING PAGES WITHIN THE MEMBER AREA
+````````````````````````````````````````````````````````````````
+$parentid =  refers to the parent id of the member
+$Firstname = refers to the first name of the member (first letter capitalized)
+$firstname = refers to the first name of the member (first letter not capitalized)
+$memberemail  = refers to the email of the member
+$memberid = refers to the memberid of the member in the database
+
+
+
+
+``````````````
+PAGES TO EDIT
+``````````````
+index.php 							
+- the home page
+
+nojs_sample_video.php 		
+- this file is a video file to use when javascript is disabled.
+
+404.php 								
+- not found page
+
+contact.php 						
+- contact form page
+
+emailproblem.php 				
+- the page that members see if messages failed to send to their email
+
+footer.php 							
+- footer menu
+
+forum.php 							
+- the forum page
+
+header.php 							
+- the page top section
+
+messagesent.php 				
+- the page that members see if mail has successfully delivered
+
+photogallery.php 					
+- the photogallery (can be used to as many category as you like)
+
+resources.php 					
+- links to external websites unlike regular links page, external websites opens up in lightbox effect.
+
+regular.php 							
+- regular page that can be used for articles
+
+regular_onecolumn.php 		
+- regular page without the sidemenu
+
+regularpage_withslideshow.php 
+- regular page with slideshow
+
+sample_video.php 				
+- sample video page
+
+sidemenu.php						
+- sidemenu
+
+topmenu.php 						
+- the top menu
+
+
+
+```````````````````````````````
+FORUMS
+```````````````````````````````
+Since adminstrator has no record in database, administrator can only approved and delete posts in the forum.  Therefore, admin cannot add posts in the forum.
+
+However you can assign a member as a moderator since member has record in the members database.  And a moderator member can approve posts as well as add and delete posts.
+
+
+
+`````````````````````````````````````
+PROTECTING YOUR SITE FROM HACKERS
+`````````````````````````````````````
+(advanced users only! Be sure to get professional advice when in doubt)
+1.  The .htaccess file provided by MTT is pre-configured to work with most servers, however please check .htaccess file to see that security is being set properly to match your server requirements.  You need knowledge of htaccess to do this.  
+
+2.  As an added security measure, please make sure that your .htaccess is chmod to 644 or RW-R--R--.
+
+
+
+``````````````````````````````````````````````
+HOW TO ADD PHOTO ON YOUR PHOTOGALLERY
+``````````````````````````````````````````````
+When adding photo into the gallery, make sure to use class="colorbox1" in the hyperlink.
+
+Example: 
+
+<a class='colorbox1' href="images/sampleimage.jpg" title="sample image">
+	<img src="images/samplethumbnail.jpg" border="0" alt="" />
+</a>
+
+If you want to apply fading effect on mouse over, add "gradualfader" in the class.
+
+The above code can be improve as follows:
+
+<a class='colorbox1 gradualfader' href="images/sampleimage.jpg" title="sample image">
+	<img src="images/samplethumbnail.jpg" border="0" alt="" />
+</a>
+
+For more information about the fading effect, see this:
+http://dynamicdrive.com/dynamicindex11/gradualfader.htm
+
+
+
+```````````````````````````````````````````````
+HOW TO OPEN A WEBSITE INSIDE LIGHTBOX EFFECT
+```````````````````````````````````````````````
+If you want your visitor to visit an external website (even internal website) without leaving the current page, make sure to use class="colorbox2" in the hyperlink.
+
+Example: 
+
+<a class="colorbox2" href="http://google.com">Google.com</a>
+
+
+````````````````````````````````````
+HOW TO MAKE YOUR OWN SLIDESHOW
+````````````````````````````````````
+See sample page for actual demo (regularpage_withslideshow.php)
+
+step 1:  Put this code inside <head></head> tag
+<script type="text/javascript">
+	var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [590, 156], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["http://example.com/slideshow/regularpage_slideshow1.jpg", "", "", ""],
+		["http://example.com/slideshow/regularpage_slideshow3.jpg", "", "", ""] // no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:5000, cycles:0, wraparound:false, randomize:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1500, //transition duration (milliseconds)
+	descreveal: "",
+	togglerid: ""
+})
+</script>
+
+Set the url of the image
+Set the dimensions to match the size of the actual image.
+Remember, no trailing comma after the last image (see the above code carefully)
+
+STEP 2:  Put this code anywhere in your <body></body> tags
+<div id="fadeshow1"></div>
+
+STEP 3:  Add a <noscript> tag for browsers with javascript disabled
+Example:
+<noscript><img alt="do business" src="slideshow/regularpage_slideshow1.jpg" /></noscript>
+
+This noscript tag allows your slideshow to downgrade to static image in case javascript is disabled
+
+For more technical details, please visit:
+http://www.dynamicdrive.com/dynamicindex14/fadeinslideshow.htm
+
+
+
+`````````````````````````````
+HOW TO CREATE A PIE GRAPH
+`````````````````````````````
+Please copy the demopiegraph.php and change the data in there.  Just enter the data and the script will draw the pie graph for you.
+
+Please see this for technical details:
+http://dynamicdrive.com/dynamicindex11/piegraph.htm
+
+
+
+
+`````````````````````````````
+HOW TO CREATE A LINE GRAPH
+`````````````````````````````
+Please copy the demopiegraph.php and change the data in there.  Just enter the data and the script will draw the line graph for you.
+
+Please see this for technical details:
+http://dynamicdrive.com/dynamicindex11/linegraph.htm
+
+
+
+
+
+
+
+

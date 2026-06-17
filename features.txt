@@ -1,0 +1,97 @@
+MORE THAN TEMPLATES - DESCRIPTION, FEATURES AND TIPS
+
+
+DESCRIPTION:
+
+More Than Templates (MTT) is not a CMS, it's a general purpose template.  
+
+However, unlike any other template, it comes with extra added features that will enable you to create 
+a quality fully interactive and engaging website.  
+
+MTT is created to help shorten the development time.  
+
+If you are a skilled PHP programmer, you can extend MTT by adding affiliate program, social networking 
+with each member having their own public page, and a lot more possibilities.  
+
+It can be used for personal or business purposes. 
+ 
+It can be setup to go with any bloging platform.  
+
+MTT comes with pre-configured scripts so that you only need to edit one configuration file and everything
+is setup for you.
+
+
+
+FEATURES:
+
+1.  Contact form (captcha enabled)
+
+2.  Slideshows (with smooth fading transitions)
+slideshows downgrade automatically.  If javascript is disabled, just use the <noscript></noscript> tag.
+
+3.  Membership Area
+Visitors can register as member. Each member has a member area to login to
+- Forgot Password Facility
+- Change Password Facility
+- Member can modify their profile and can upload their photo
+
+4.  Forum Script
+- posts can be set to auto-approved or pending
+- Can set multiple forums
+- A separate moderator can be assigned in each forum
+
+5.  Admin Area
+- Allows you to see who is visiting your site what page they visit and from where.
+- Allows you to track who signups to your site.
+- Allows you to manage members
+- Allows you to manage forum
+
+6.  Photo Gallery
+- With lightbox using colorbox1 to popup images in a lightbox and using colorbox2 to 
+open external webpages without leaving your website
+
+7.  Video Page
+- 1 sample page for browser with javascript enabled
+- 1 sample page provided for browser with javascript disabled
+
+8.  Drop Down Menu (smooth menu fading feature)
+
+
+
+
+PAGES TO EDIT
+
+index.php - the home page
+
+nojs_sample_video.php - this file is a video file to use when javascript is disabled.
+
+404.php - not found page
+
+contact.php - contact form page
+
+emailproblem.php - the page that members see if messages failed to send to their email
+
+footer.php - footer menu
+
+forum.php - the forum page
+
+header.php - the page top section
+
+messagesent.php - the page that members see if mail has successfully delivered
+
+photogallery.php - the photogallery (can be used to as many category as you like)
+
+resources.php - links to external websites unlike regular links page, external websites opens up in lightbox effect.
+
+regular.php - regular page that can be used for articles
+
+regular_onecolumn.php - regular page without the sidemenu
+
+regularpage_withslideshow.php - regular page with slideshow
+
+sample_video.php - sample video page
+
+sidemenu.php	- sidemenu
+
+topmenu.php - the top menu
+

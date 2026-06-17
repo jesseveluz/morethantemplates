@@ -1,0 +1,54 @@
+/*
+ *	MORETHANTEMPLATE Version 1.0.0.0
+ * (c) Jesse Veluz, 2010
+ * www.jesseveluz.com
+ *
+ */
+
+INSTALLATION INSTRUCTIONS
+
+
+Option 1: Without affiliate program
+
+STEP 1:
+Edit the general_settings.php file inside /inc directory
+
+STEP 2:
+chmod /member/photos to 777  (most FTP software allows you to change chmod)
+
+/*
+ * (Step 2 is optional
+ * set this only if you want to make use of the forum
+ * and the membership script.
+ * otherwise you may proceed to step 3.)
+ */ 
+
+STEP 3:
+run the installer in your browser
+ go to -> http://[yourdomain]/[yourdirectory]/install
+
+STEP 4:
+Start editing your heart out
+Please refer to howtouse.txt for instructions on using MTT
+
+
+
+Option 2: With affiliate program
+
+STEP 1:
+Edit the general_settings.php file inside /inc directory
+
+STEP 2:
+chmod /member/photos to 777  (most FTP software allows you to change chmod)
+
+STEP 3:
+edit htaccess.txt and rename to .htaccess
+(this requires basic knowledge of htaccess.  Be sure to get professional advice)
+
+STEP 3:
+run the installer in your browser
+ go to -> http://[yourdomain]/[yourdirectory]/install
+
+STEP 4:
+Start editing your heart out
+Please refer to howtouse.txt for instructions on using MTT

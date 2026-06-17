@@ -1,0 +1,48 @@
+Acknowledgment
+
+
+Thanks to the following people whose works have been fully implemented on MTT templates
+
+ColorBox v1.3.6 - a full featured, light-weight, customizable lightbox based on jQuery 1.3
+(c) 2009 Jack Moore
+http://colorpowered.com/colorbox/
+
+Securimage Captcha - an open-source free PHP CAPTCHA script for generating complex images and CAPTCHA codes to protect forms from spam and abuse.
+(c) 2007 Drew Phillips
+http://www.phpcaptcha.org/
+
+Ultimate Fade-in slideshow (v2.1)- a robust and a cross browser fade in slideshow script
+Author: Dynamic Drive
+http://www.dynamicdrive.com/dynamicindex14/fadeinslideshow.htm
+
+TableCreator - An include file for PHP script to help create table within MySql loop.
+(c) 2008 Jesse Veluz
+https://www.jesseveluz.com/
+
+jQuery JavaScript Library - a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+Copyright (c) 2009 John Resig
+http://jquery.com/
+
+php-email-address-validation - A PHP class for validating email addresses according to the official specifications.
+Author: Dave Child
+http://code.google.com/p/php-email-address-validation/
+
+DbNavigator - An include file for PHP script to help generate pages for MySql records.
+(c) 2008 Jesse Veluz
+https://www.jesseveluz.com/
+
+Smooth Navigational Menu- A smooth drop down menu system using jQuery library
+Author: Dynamic Drive
+http://www.dynamicdrive.com/
+
+Line Graph Script - By Balamurugan S - http://www.sbmkpm.com/ 
+Script featured at Dynamic Drive
+http://www.dynamicdrive.com
+
+Pie Graph Script - By Balamurugan S http://www.sbmkpm.com/ 
+Script featured at Dynamic Drive
+http://www.dynamicdrive.com
+
+Gradual Element Fader
+(c) Dynamic Drive DHTML code library
+www.dynamicdrive.com

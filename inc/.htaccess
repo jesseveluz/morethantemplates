@@ -1,0 +1,29 @@
+#
+#	MORETHANTEMPLATE Version 1.0.0.0
+# (c) Jesse Veluz, 2010
+# http://webmarketing411.com
+#
+#
+#
+#
+######################################
+# IMPORTANT NOTE: This requires knowledge of htaccess. #
+#      Dont edit unless you know what you're doing.           #
+######################################
+
+
+#
+# PROTECT FILES IN THIS DIRECTORY
+#
+<files general_settings.php>
+order allow,deny
+deny from all
+</files>
+<files functions.php>
+order allow,deny
+deny from all
+</files>
+<files go_dbconnect.php>
+order allow,deny
+deny from all
+</files>
